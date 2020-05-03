@@ -11,9 +11,9 @@
       password: "{{ vmware_password }}"
       datacenter: "Prime"
       validate_certs: no
-      name:
-      - Satellite-Test
-      - sadas-rhsat
+      uuid:
+      - "4200ad09-9d55-3ced-aef6-64f4ce9000b6"
+      - "42004183-cab3-2701-e8ae-ddc918cf6eb1"
       dest_folder: "/Prime/vm/sysmgmt-pnq/saydas"
     delegate_to: localhost  
     register: vmware_vms
