@@ -9,7 +9,7 @@
       hostname: "optimus.syslab.pnq2.redhat.com"
       username: "administrator@syslab.pnq2.redhat.com"
       password: "{{ vmware_password }}"
-      folder: "/Prime/vm/sysmgmt-pnq/sadas"
+      folder: "{{ user_folders  }}"
       validate_certs: no
       show_attribute: yes
     register: vmware_vms
