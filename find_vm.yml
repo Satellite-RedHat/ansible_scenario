@@ -6,10 +6,10 @@
   tasks:
   - name: Find the vm info
     vmware_vm_info:
-      hostname: "{{ vmware_hostname }}"
-      username: "{{ vmware_username }}"
+      hostname: "optimus.syslab.pnq2.redhat.com"
+      username: "administrator@syslab.pnq2.redhat.com"
       password: "{{ vmware_password }}"
-      folder: "/{{ vmware_datacenter }}/{{ vmware_folder_type }}/{{ vmware_parent_folder }}/sadas"
+      folder: "/Prime/vm/sysmgmt-pnq/sadas"
       validate_certs: no
       show_attribute: yes
     register: vmware_vms
